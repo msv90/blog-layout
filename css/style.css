@@ -138,3 +138,44 @@ footer .footer-email{
 }
 
 /* BLOG LAYOUT LIST */
+.layout-list .post-item{
+    margin-bottom: 6rem;
+}
+
+.layout-list .post-item .category{
+    margin-bottom: .85rem;
+}
+
+.layout-list .post-item .category a{
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+.layout-list .post-item h3{
+    margin-bottom: .85rem;
+}
+
+.layout-list .post-item .author-and-date{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: 1px;
+}
+
+.layout-list .post-item .author-and-date a{
+    font-size: .75rem;
+}
+
+.layout-list .post-item .description{
+    margin-top: .85rem;
+    margin-bottom: 1.7rem;
+}
+
+@media(max-width: 768px){
+    .layout-list .post-item:nth-child(odd) .post-info{
+        margin-top: .85rem;
+    }
+    .layout-list .post-item:nth-child(even) .post-info{
+        margin-bottom: .85rem;
+    }
+}
