@@ -1,0 +1,140 @@
+/* COMMON */
+body{
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.layout .navbar-collapse{
+    justify-content: space-between;
+}
+
+@media (max-width: 992px){
+    .layout{
+        margin-top: 6rem;
+    }
+    nav.navbar{
+        position: fixed;
+        right: 0;
+        left: 0;
+        border-radius: 0;
+        top: 0;
+        z-index: 999;
+    }
+    nav.navbar .container{
+        margin-left: 0;
+    }
+
+    nav.navbar a.navbar-brand{
+        margin-top: 1rem;
+    }
+
+    nav.navbar ul.navbar-nav{
+        margin-top: 0 !important;
+    }
+}
+
+button.navbar-toggler{
+    outline: 0 !important;
+    border-width: 2px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /*background: #6f7273;*/
+    /*background: #222;*/
+    background: #1b1b1b;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+footer .footer-email{
+    text-align: right;
+}
+
+.posts-list{
+    margin-top: 3rem;
+}
+
+.post-item{
+    margin-bottom: 3.4rem;
+}
+
+.post-item .category,
+.post-item .category a{
+    color: #d6b161;
+    /*text-transform: uppercase;*/
+    font-size: .85rem;
+}
+
+.post-item h3{
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.post-item .post-info{
+    color: #7e7e7e;
+    font-size: .85rem;
+}
+
+.post-item .author-and-date,
+.post-item .author-and-date a{
+    color: #909090;
+}
+
+.post-item .description{
+    line-height: 1.7rem;
+}
+
+.post-item .read-more{
+    text-transform: uppercase;
+    color: #bbb;
+}
+
+.custom-pagination{
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.custom-pagination li a,
+.custom-pagination li a:hover,
+.custom-pagination li span,
+.custom-pagination li span:hover{
+    margin: 0 3px;
+    color: #424242;
+    border-color: #ddd;
+    font-size: .8rem;
+}
+
+.custom-pagination .page-item.active span{
+    background-color: #222;
+    border-color: #222;
+    color: #fff;
+}
+
+.custom-pagination li a:hover{
+
+}
+
+/* BLOG LAYOUT GRID */
+.layout-grid .post-item .category{
+    margin-bottom: .45rem;
+}
+
+.layout-grid .post-item .post-info{
+    margin-top: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.layout-grid .post-info h3{
+    margin-bottom: .85rem;
+}
+
+.layout-grid .post-info .description{
+    margin-top: .85rem;
+    margin-bottom: 1.7rem;
+}
+
+/* BLOG LAYOUT LIST */
