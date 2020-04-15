@@ -257,6 +257,7 @@ footer .footer-email{
 .layout-post .post-info .post-info-item{
     display: inline-block;
     margin-right: 1rem;
+    margin-bottom: .5rem;
 }
 
 .layout-post .post-info a{
