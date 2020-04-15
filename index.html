@@ -14,7 +14,87 @@
 
     </head>
 
-    <body>
+    <body class="layout layout-index">
+
+        <!-- MENU -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <a href="index.html" class="navbar-brand">Blog Layout</a>
+                    <ul class="navbar-nav mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a href="grid.html" class="nav-link">Grid</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="list.html" class="nav-link">List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="fullwidth.html" class="nav-link">Fullwidth</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="post_sidebar.html" class="nav-link">Post sidebar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="post_fullwidth.html" class="nav-link">Post fullwidth</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- CONTENT -->
+        <div class="container index-content">
+
+            <div class="row index-content-section index-lists-of-posts">
+                <div class="col-12">
+                    <h2>List of Posts</h2>
+                </div>
+                <a class="col-3" href="grid.html" target="_blank">
+                    <p>Grid</p>
+                    <img class="img-fluid" src="img/grid.svg" alt="List of posts, Grid">
+                </a>
+                <a class="col-3" href="list.html" target="_blank">
+                    <p>List</p>
+                    <img class="img-fluid" src="img/list2.svg" alt="List of posts, List">
+                </a>
+                <a class="col-3" href="fullwidth.html" target="_blank">
+                    <p>Fullwidth</p>
+                    <img class="img-fluid" src="img/fullwidth3.svg" alt="List of posts, Fullwidth">
+                </a>
+            </div>
+
+            <div class="row index-content-section index-single-posts">
+                <div class="col-12">
+                    <h2>Single posts</h2>
+                </div>
+                <a class="col-4" href="post_sidebar.html" target="_blank">
+                    <p>Post sidebar</p>
+                    <img class="img-fluid" src="img/post_sidebar.svg" alt="Single post, Sidebar">
+                </a>
+                <a class="col-4" href="post_fullwidth.html" target="_blank">
+                    <p>Post fullwidth</p>
+                    <img class="img-fluid" src="img/post_fullwidth.svg" alt="Single post, Fullwidth">
+                </a>
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-12 col-lg-3 footer-email">
+                        mike.developer90@gmail.com
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
         <script src="js/jquery-3.3.1.slim.min.js"></script>

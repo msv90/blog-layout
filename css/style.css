@@ -646,3 +646,24 @@ footer .footer-email{
 .layout-post.layout-post-sidebar .post-comments .comment-item .comment-item .user-info{
     padding-left: 15px;
 }
+
+/* INDEX PAGE */
+.index-content{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.index-content-section{
+    margin-bottom: 3rem;
+}
+
+.index-content h2{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.index-content a p{
+    color: #212529;
+    text-decoration: none;
+    font-size: 1.85rem;
+}
