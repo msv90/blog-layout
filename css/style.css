@@ -169,7 +169,7 @@ footer .footer-email{
     margin-bottom: 1.7rem;
 }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
     .layout-list .post-item:nth-child(odd) .post-info{
         margin-top: .85rem;
     }
@@ -240,61 +240,59 @@ footer .footer-email{
     background: #d6b161;
 }
 
-/* BLOG LAYOUT: POST FULLWIDTH */
-.layout-post-fullwidth h1{
+/* BLOG LAYOUT: POST FULLWIDTH; BLOG LAYOUT: POST SIDEBAR */
+.layout-post h1{
     margin-top: 1.85rem;
     margin-bottom: .85rem;
     letter-spacing: 1px;
     font-weight: 300;
 }
 
-.layout-post-fullwidth .post-info{
+.layout-post .post-info{
     font-size: .75rem;
     text-transform: uppercase;
     color: #909090;
 }
 
-.layout-post-fullwidth .post-info a{
+.layout-post .post-info .post-info-item{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.layout-post .post-info a{
     color: #909090;
 }
 
-.layout-post-fullwidth .post-info i{
-    margin-left: 1rem;
-}
-
-.layout-post-fullwidth .post-info i:first-child{
-    margin-left: 0;
-}
-
-.layout-post-fullwidth .post-text{
+.layout-post .post-text{
     margin: 1.85rem 0;
 }
 
-.layout-post-fullwidth .post-text p{
+.layout-post .post-text p{
     margin: 0 0 .85rem;
     color: #7e7e7e;
     line-height: 1.85rem;
     font-size: .85rem;
 }
 
-.layout-post-fullwidth .post-text p:last-child{
+.layout-post .post-text p:last-child{
     margin-bottom: 0;
 }
 
-.layout-post-fullwidth .post-tags{
+.layout-post .post-tags{
     margin-bottom: 1.35rem;
 }
 
-.layout-post-fullwidth .post-tags h5{
+.layout-post .post-tags h5{
     color: #333;
     font-size: 0.85rem;
     text-transform: uppercase;
     margin-bottom: .35rem;
 }
 
-.layout-post-fullwidth .post-tags a{
+.layout-post .post-tags a{
     float: left;
-    margin-right: 10px;
+    margin-right: .6rem;
+    margin-bottom: .6rem;
     padding: 5px 12px;
     color: #837f7e;
     border: 1px solid #d3d3d3;
@@ -304,24 +302,25 @@ footer .footer-email{
     transition: all .3s;
 }
 
-.layout-post-fullwidth .post-tags a:hover{
+.layout-post .post-tags a:hover{
     text-decoration: none;
     background: #d6b161;
     color: #fff;
+    border: 1px solid #d6b161;
 }
 
-.layout-post-fullwidth .post-share{
+.layout-post .post-share{
     margin-bottom: 1.85rem;
 }
 
-.layout-post-fullwidth .post-share h5{
+.layout-post .post-share h5{
     color: #333;
     font-size: 0.85rem;
     text-transform: uppercase;
     margin-bottom: .35rem;
 }
 
-.layout-post-fullwidth .post-share a{
+.layout-post .post-share a{
     float: left;
     width: 2rem;
     height: 2rem;
@@ -335,13 +334,14 @@ footer .footer-email{
     border-radius: 10%;
 }
 
-.layout-post-fullwidth .post-share a:hover{
+.layout-post .post-share a:hover{
     text-decoration: none;
     background: #d6b161;
     color: #fff;
+    border: 1px solid #d6b161;
 }
 
-.layout-post-fullwidth .post-nav{
+.layout-post .post-nav{
     padding: 1.85rem 15px;
     box-sizing: border-box;
     border-top: 1px solid #efefef;
@@ -349,64 +349,70 @@ footer .footer-email{
     margin-bottom: 1.85rem;
 }
 
-.layout-post-fullwidth .post-nav a{
+.layout-post .post-nav a{
     color: #d2d2d2;
     text-decoration: none;
 }
 
-.layout-post-fullwidth .post-nav a:hover{
+.layout-post .post-nav a:hover{
     text-decoration: none;
     color: #323232;
 }
 
-.layout-post-fullwidth .post-nav a i{
+.layout-post .post-nav a i{
     font-size: 3rem;
 }
 
-.layout-post-fullwidth .post-nav a .nav-text{
+.layout-post .post-nav a .nav-text{
     font-size: 1.5rem;
     line-height: 3rem;
 }
 
-.layout-post-fullwidth .post-nav .prev-post{
+.layout-post .post-nav .prev-post{
     width: 45%;
     float: left;
     text-align: left;
 }
 
-.layout-post-fullwidth .post-nav .prev-post a i{
+.layout-post .post-nav .prev-post a i{
     float: left;
     margin-right: 1.5rem;
 }
 
-.layout-post-fullwidth .post-nav .next-post{
+.layout-post .post-nav .next-post{
     width: 45%;
     float: left;
     text-align: left;
 }
 
-.layout-post-fullwidth .post-nav .next-post a i{
+.layout-post .post-nav .next-post a i{
     float: right;
     margin-left: 1.5rem;
 }
 
-.layout-post-fullwidth .post-nav .home-link{
+.layout-post .post-nav .home-link{
     float: left;
     width: 10%;
     text-align: center;
 }
 
-.layout-post-fullwidth .post-nav .next-post{
+.layout-post .post-nav .next-post{
     width: 45%;
     float: right;
     text-align: right;
 }
 
-.layout-post-fullwidth .post-comments{
+@media(max-width: 767px) {
+    .layout-post .post-nav a .nav-text{
+        font-size: 1rem;
+    }
+}
+
+.layout-post .post-comments{
     margin-bottom: 1.85rem;
 }
 
-.layout-post-fullwidth .post-comments h5{
+.layout-post .post-comments h5{
     color: #333;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -415,54 +421,227 @@ footer .footer-email{
     margin-bottom: .85rem;
 }
 
-.layout-post-fullwidth .post-comments .comments-list > .comment-item{
+.layout-post .post-comments .comments-list > .comment-item{
     margin-bottom: 2rem;
 }
 
-.layout-post-fullwidth .post-comments .comments-list > .comment-item:last-child{
+.layout-post .post-comments .comments-list > .comment-item:last-child{
     margin-bottom: 0;
 }
 
-.layout-post-fullwidth .post-comments .comment-item .user-image{
+.layout-post .post-comments .comment-item .user-image{
     font-size: 4rem;
     color: #222;
 }
 
-.layout-post-fullwidth .post-comments .comment-item .user-info{
+.layout-post .post-comments .comment-item .user-info{
     margin-top: 1rem;
     font-size: .85rem;
     color: #7e7e7e;
 }
 
-.layout-post-fullwidth .post-comments .comment-item .user-name{
+.layout-post .post-comments .comment-item .user-name{
     color: #222;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.layout-post-fullwidth .post-comments .comment-item .time-and-reply{
+.layout-post .post-comments .comment-item .time-and-reply{
     margin-bottom: .5rem;
 }
 
-.layout-post-fullwidth .post-comments .comment-item .time-and-reply a{
+.layout-post .post-comments .comment-item .time-and-reply a{
     text-decoration: none;
     color: #7e7e7e;
 }
 
-.layout-post-fullwidth .post-comments .comment-item .time-and-reply a:hover{
+.layout-post .post-comments .comment-item .time-and-reply a:hover{
     text-decoration: none;
     color: #d6b161;
 }
 
-.layout-post-fullwidth .post-comments .comment-item .time-and-reply a i{
+.layout-post .post-comments .comment-item .time-and-reply a i{
     margin-left: 2rem;
     margin-right: .25rem;
 }
 
+@media(max-width: 1199px){
+    .layout-post .post-comments .comment-item .user-image i{
+        font-size: 3rem;
+    }
+}
 
+@media(max-width: 767px){
+    .layout-post .post-comments .comment-item .user-image i{
+        font-size: 2rem;
+    }
+}
 
+.layout-post .post-leave-comment{
+    background: #f8f8f8;
+    padding: 3rem;
+    border-radius: 1.25rem;
+    margin-bottom: 4rem;
+}
 
+.layout-post .post-leave-comment form .form-section{
+    margin-bottom: 1.25rem;
+}
 
-.layout-post-fullwidth .post-leave-comment{
+.layout-post .post-leave-comment form input[type="text"]{
+    height: 3rem;
+    border: 1px solid #fff;
+    background: #fff;
+    font-size: .85rem;
+    vertical-align: middle;
+    width: 100%;
+    padding: .5rem 1rem;
+    color: #9b9a9a;
+    outline: none !important;
+    border-radius: .25rem;
+    transition: all ease-in-out .15s;
+}
 
+.layout-post .post-leave-comment form textarea{
+    resize: none;
+    border: 1px solid #fff;
+    background: #fff;
+    font-size: .85rem;
+    width: 100%;
+    padding: .5rem 1rem;
+    color: #9b9a9a;
+    outline: none !important;
+    border-radius: .25rem;
+    transition: all ease-in-out .15s;
+    outline: none !important;
+}
+
+.layout-post .post-leave-comment form input[type="text"]:focus,
+.layout-post .post-leave-comment form textarea:focus{
+    border: 1px solid #222222;
+    color: #222222;
+}
+
+.layout-post .post-leave-comment form input[type="submit"]{
+    background: #222222;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 1px solid #222222;
+    border-radius: .25rem;
+    width: 100%;
+    padding: .5rem 1rem;
+    height: 3rem;
+    outline: none !important;
+}
+
+.layout-post .post-leave-comment form input[type="submit"]:hover{
+    background: #d6b161;
+    color: #fff;
+    border: 1px solid #d6b161;
+}
+
+/* BLOG LAYOUT: POST SIDEBAR */
+.sidebar-item{
+    margin-bottom: 3rem;
+}
+
+.sidebar-item-title{
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    color: #222222;
+    padding-bottom: .6rem;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 1rem;
+}
+
+.sidebar-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-list li{
+    margin-bottom: .75rem;
+}
+
+.sidebar-list li a{
+    text-decoration: none;
+    color: #837f7e;
+    font-size: .85rem;
+    transition: all .3s;
+}
+
+.sidebar-list li a:before {
+    padding-right: 10px;
+    content: "\f105";
+    font-family: "FontAwesome";
+}
+
+.sidebar-list li a:hover{
+    color: #d6b161;
+}
+
+.sidebar-tags a{
+    float: left;
+    margin-right: .7rem;
+    margin-bottom: .7rem;
+    padding: .2rem .5rem;
+    color: #837f7e;
+    border: 1px solid #d3d3d3;
+    border-radius: 3rem;
+    font-size: .85rem;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.sidebar-socials a{
+    float: left;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    margin-right: 10px;
+    color: #5a5a5a;
+    border: 1px solid #5a5a5a;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: all .3s;
+    border-radius: 10%;
+}
+
+.sidebar-tags a:hover,
+.sidebar-socials a:hover{
+    background: #d6b161;
+    border: 1px solid #d6b161;
+    color: #ffffff;
+}
+
+.sidebar-post-item{
+    margin-bottom: 1.25rem;
+}
+
+.sidebar-post-item-image{
+    padding-right: 0;
+}
+
+.sidebar-post-item-info h4{
+    text-transform: uppercase;
+    color: #333;
+    font-size: .85rem;
+    line-height: 1.25rem;
+}
+
+.sidebar-post-item-info p{
+    color: #9b9a9a;
+    font-size: .85rem;
+}
+
+.layout-post.layout-post-sidebar .post-comments .comment-item .user-image{
+    font-size: 5rem;
+}
+
+.layout-post.layout-post-sidebar .post-comments .comment-item .user-info{
+    padding-left: 0;
+}
+
+.layout-post.layout-post-sidebar .post-comments .comment-item .comment-item .user-info{
+    padding-left: 15px;
 }

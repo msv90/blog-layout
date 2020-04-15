@@ -16,7 +16,7 @@
 
     </head>
 
-    <body class="layout layout-post-fullwidth">
+    <body class="layout layout-post layout-post-fullwidth">
 
     <!-- MENU -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -64,7 +64,15 @@
             </div>
 
             <div class="col-12 post-info">
-                <i class="fa fa-user" aria-hidden="true"></i> Posted by <a href="javascript:void(0)">Ben Wards</a> <i class="fa fa-folder" aria-hidden="true"></i> <a href="javascript:void(0)">Lifestyle</a>, <a href="javascript:void(0)">Travel</a>, <a href="javascript:void(0)">Fashion</a> <i class="fa fa-comments" aria-hidden="true"></i> 4 comments
+                <div class="post-info-item">
+                    <i class="fa fa-user" aria-hidden="true"></i> Posted by <a href="javascript:void(0)">Ben Wards</a>
+                </div>
+                <div class="post-info-item">
+                    <i class="fa fa-folder" aria-hidden="true"></i> <a href="javascript:void(0)">Lifestyle</a>, <a href="javascript:void(0)">Travel</a>, <a href="javascript:void(0)">Fashion</a>
+                </div>
+                <div class="post-info-item">
+                    <i class="fa fa-comments" aria-hidden="true"></i> 5 comments
+                </div>
             </div>
 
             <div class="col-12 post-text">
@@ -106,13 +114,16 @@
                         <i class="fa fa-vk" aria-hidden="true"></i>
                     </a>
                     <a href="javascript:void(0)">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                    <a href="javascript:void(0)">
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
                     <a href="javascript:void(0)">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="javascript:void(0)">
                         <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-behance" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -218,8 +229,20 @@
 
             </div>
 
-            <div class="col-12 post-leave-comment">
-
+            <div class="col-12">
+                <div class="post-leave-comment">
+                    <form onsubmit="return false">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <textarea class="form-section" cols="30" rows="10" placeholder="Leave your comment"></textarea>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input class="form-section" type="text" placeholder="Say your name">
+                                <input class="form-section" type="submit" value="Send">
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
 
         </div>
