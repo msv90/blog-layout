@@ -1,1 +1,1 @@
-To watch this mockup visit http://blog-layout.msv90-demo.ru/ please.
+Watch this mockup  http://blog-layout.msv90-demo.ru/.
